@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+  
+main {
+  background-image: url(../images/006.jpg);
+  height:1000px;
+  width:1070px;
+  padding: 20px;
+  font-weight: 50;
+  line-height: 1.5;
+  border-bottom: 3px solid black;
+}
+
+h2 {
+  font-size: 23px;
+  margin: 15px;
+  font-weight: bolder;
+}
+  
+.navigation li {
+  text-align: left;
+  position: relative;
+  width: 20%; 
+  float: left;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-size: 25px;
+  background-color:#F5F5F5 ;
+}
+
+.navigation li:nth-child(even) a {
+  color: green;
+  text-decoration: none;
+}
+
+.navigation li:nth-child(odd) a {
+  color: purple;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  color: red;
+}
+
+.navigation li:nth-child(2) a:hover {
+  color: yellow;
+}
+
+.navigation li a:focus {
+  color: blue;
+}
+
+.navigation li:after {
+  content: '☺';
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.foto {
+  margin: 35px 25px;
+}
+   
+footer {
+  background-image: url(../images/006.jpg);
+  height:250px;
+  width:1090px;
+  padding:10px;
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.our_fotos {
+  text-align: center;
+}
+
+header {
+  background-image: url(../images/005.jpg);
+  height:350px;
+  width:1090px;
+  padding:10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 50%;
+  right: 50px;
+  width: 100px;
+  height: 50px;
+  background: red;
+  z-index: 2;
+}
