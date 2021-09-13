@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+  padding-bottom: 90px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: green;
+}
+
+.header {
+  background: green;
+  height: 80px;
+}
+
+.aligned {
+  background: red;
+  width: 33.33%;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.centered {
+  background: green;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2) rotate(45deg) skew(180deg);
+}
+
+.aligned:nth-child(2) {
+  background: #ccc;
+}
+
+.nav>li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px 0;
+  position: relative;
+}
+
+.nav>li:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: red;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s linear;
+}
+
+.nav>li:hover:after {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+}
+
+.sub-menu {
+  background: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.sub-menu li {
+  padding: 10px;
+}
+
+.sub-menu li:hover {
+  background: yellow;
+}
+
+li:hover>.sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sub-menu .sub-menu {
+  background: #ccc;
+  top: 0;
+  left: 100%;
+}
+
+.myClass,
+.mySecondClass {
+  background: red;
+}
+
+
+
+
+
