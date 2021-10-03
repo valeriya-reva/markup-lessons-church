@@ -134,7 +134,7 @@ html, body {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s linear;
 }
 
 .sub-menu li {
@@ -161,7 +161,72 @@ li:hover>.sub-menu {
   background: red;
 }
 
+.bg-img {
+  height: 500px;
+  background: url('../img/01.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+.bg-gradient {
+  height: 300px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(170,1,26,1) 69%, rgba(145,167,1,1) 100%, rgba(0,212,255,1) 100%);
+}
 
+.bg-icon {
+  margin: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  background: radial-gradient(circle, #fff 19%, #000 19%, #000 26%, 
+  #fff 26%, #fff 33%, transparent 33%, transparent 100%), 
+  linear-gradient(#000 0%, #000 34%, #fff 34%, #fff 38%, 
+  #000 38%, #000 100%);
+}
 
+.bg-radial {
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(circle, red, green);
+}
+
+.block {
+  height: 300px;
+  width: 33.33%;
+  float: left;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.pink {
+  background: pink;
+}
+
+.block-height-3 {
+  height: 33.33%;
+}
+
+.block-height-2 {
+  height: 50%;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
 
