@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"> 
+  <title>Шафа Добра</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <ul class="nav">
+        <li>
+          <span>Home</span>
+          <ul class="sub-menu">
+            <li>
+              <span>fist</span>
+              <ul class="sub-menu">
+                <li>fist</li>
+                <li>second</li>
+                <li>third</li>
+              </ul>
+            </li>
+            <li>second</li>
+            <li>third</li>
+          </ul>
+        </li><!--
+        --><li>About</li><!--
+        --><li>
+          <span>contacts</span>
+          <ul class="sub-menu">
+            <li>fist</li>
+            <li>second</li>
+            <li>third</li>
+          </ul>
+        </li><!--
+        --><li>gallery</li>
+      </ul>
+    </header>
+    <main class="content">
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                head
+              </th>
+              <th colspan="2">
+                head
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                очень длинный текст очень длинный текст очень длинный текст очень длинный текст очень длинный текст очень длинный текст
+              </td>
+              <td>
+                2
+              </td>
+              <td rowspan="3">
+                3
+              </td>
+            </tr>
+            <tr>
+              <td>
+                4
+              </td>
+              <td>
+                5
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="fake-table">
+          <span>display: table-cell;</span>
+        </div>
+      </div>
+      <form class="form" action="#">
+        <div class="input-item">
+          <label for="name">Name</label>
+          <input placeholder="Enter name" id="name" name="name" type="text">
+        </div>
+        <div class="input-item">
+          <label for="number">Number</label>
+          <input placeholder="Enter age" value="23" id="number" name="number" type="number">
+        </div>
+        <div class="input-item">
+          <label for="pass">Password</label>
+          <input placeholder="Enter password" value="23" id="pass" name="pass" type="password">
+        </div>
+        <div class="input-item">
+          <label for="radio-1">Radio 1</label>
+          <input id="radio-1" name="radio" type="radio">
+        </div>
+        <div class="input-item">
+          <label for="radio-2">Radio 2</label>
+          <input id="radio-2" name="radio" type="radio">
+        </div>
+        <div class="input-item">
+          <label for="checkbox-1">Checkbox 1</label>
+          <input id="checkbox-1" name="checkbox-2" type="checkbox">
+        </div>
+        <div class="input-item">
+          <label for="checkbox-2">Checkbox 2</label>
+          <input id="checkbox-2" name="checkbox-2" type="checkbox">
+        </div>
+        <div class="input-item on-off">
+          <input checked="true" id="off-on" name="off-on" type="checkbox">
+          <label for="off-on"></label>
+        </div>
+        <div class="input-item ">
+          <select name="my-select" id="my-select">
+            <option value="1">value 1</option>
+            <option value="2">value 2</option>
+            <option value="3">value 3</option>
+          </select>
+        </div>
+        <div class="input-item ">
+          <textarea name="text" cols="30" rows="1"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer class="footer">footer</footer>
+  </div>
+</body>
+</html>
