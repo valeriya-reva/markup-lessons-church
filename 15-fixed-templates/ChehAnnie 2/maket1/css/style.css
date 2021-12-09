@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('../fonts/OpenSans-Regular.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.svg') format('svg'),
+         url('../fonts/OpenSans-Regular.ttf') format('truetipe');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+         url('../fonts/OpenSans-Bold.woff') format('woff'),
+         url('../fonts/OpenSans-Bold.svg') format('svg'),
+         url('../fonts/OpenSans-Bold.ttf') format('truetipe');
+    font-style: normal;
+    font-weight: normal;
+}    
+
+body {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.col-30, 
+.col-40 {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.menu {
+  text-align: right;;
+}
+
+.hero {
+  position: relative;
+  padding: 400px 0 200px 0;
+  background: url(../images/header-replace.png) no-repeat;
+  background-size: cover;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(41, 56, 72, 0.7);
+  height: 100%;
+  width: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding: 30px 0;
+}
+
+.icon {
+  display: inline-block;
+  margin: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 21px;
+  text-align: center;
+  color: rgb(255,255,255);
+  cursor: pointer;
+}
+
+.nav {
+  display: inline-block;
+  margin: 10px;
+  font-size: 14px;
+  text-align: right;
+  font-family: OpenSans-Regular;
+  cursor: pointer;
+}
+
+.nav a {
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+.home {
+  border: 2px solid white;
+  margin: 4px;
+}
+
+.h1 {
+  font-family: OpenSans-Bold;
+  font-size: 56px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 45px;
+}
+
+.colortext {
+  color: rgb(200, 52, 45);
+}
+
+.text {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 2.0;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 30px;
+  margin: auto;
+  margin-top: 45px;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+
+}
